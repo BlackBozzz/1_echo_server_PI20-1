@@ -16,7 +16,7 @@ Ident = False
 try:
     for user in users:
         if user[0] == str(addr[0]):
-            client_socket.send((f"Здравствуйте, {user[1]} \n").encode())
+            client_socket.send((f"Здравствуйте, {user[1]}\n").encode())
             Ident = True
             break
 except:
@@ -35,7 +35,7 @@ if not(Ident):
             client_socket.send((f"Отлично!) Очень приятно, {msg}\n").encode())
             break
         else:
-            client_socket.send(("Что-то пошло не так(\nВведите имя заново:").encode())
+            client_socket.send(("Что-то пошло не так(\n").encode())
 
 #Пароль
 for user in users:

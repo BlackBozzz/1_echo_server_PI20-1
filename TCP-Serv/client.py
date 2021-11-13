@@ -3,7 +3,7 @@ import socket
 #Сокет по умолчанию
 sock = socket.socket()
 sock.setblocking(1)
-sock.connect(('127.0.0.1', 9090))
+sock.connect(('127.0.0.1', 9091))
 
 #Сокет по запросу
 sock_zapr = socket.socket()
